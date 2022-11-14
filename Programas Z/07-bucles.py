@@ -123,7 +123,7 @@ print("------------------------------------------")
 c0 = int(input("Introduce un numero positivo: "))
 pasos = 0
 
-while c0 == 1:
+while c0 != 1:
     if c0 % 2:
         c0 = c0 / 2
     else:
@@ -131,6 +131,8 @@ while c0 == 1:
     print(c0)
     pasos += 1
 print("El numero de pasos es: ", pasos)
+
+
 
 
 

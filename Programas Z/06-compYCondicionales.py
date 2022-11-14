@@ -96,7 +96,7 @@ print("El impuesto es:", tax, "pesos")
  
 
 print("------------------------------")
-anio = input("Introduce el año: ")
+anio = int(input("Introduce el año: "))
 
 if anio < 1582:
     tipo_anio = "noGregoriano"
