@@ -1,29 +1,19 @@
-beatles = []
-print("Paso 1:", beatles)
-beatles.append("Jhon Lennon")
-beatles.append("Paul McCartney")
-beatles.append("George Harrison")
-# paso 2
-print("Paso 2:", beatles)
-for x in range(2):
-    beatles.append(input("Di el nombre de otro integrante: "))
-    
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+fin_lista = False
+i = 1
 
-# paso 3
-print("Paso 3:", beatles)
-del beatles[-1]
-del beatles[-1]
-# paso 4
-print("Paso 4:", beatles)
-
-beatles.insert(0, "Ringo Starr")
-# paso 5
-print("Paso 5:", beatles)
+my_list.sort()
+while not(fin_lista):
+    if my_list[i] == my_list[i-1]:
+        del my_list[i]
+    else:
+        i += 1
+    if i == len(my_list):
+        fin_lista = True
 
 
-# probando la longitud de la lista
-print("Los Fav", len(beatles))
-
+print("La lista con elementos únicos:")
+print(my_list)
 
 
 
