@@ -23,6 +23,4 @@ for tab in tablas:
     tabla(tab)
 
 
-     
-                
     
