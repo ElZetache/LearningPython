@@ -1,5 +1,7 @@
 from random import randrange
 
+#FUNCIONES:
+
 def display_board(board):
     for x in range(3):
         print("+-------+-------+-------+")
@@ -69,7 +71,9 @@ def draw_move(board):
                 if board[x][y] == str(mov_maquina):
                     mov_correcto = True
                     board[x][y] = "X"
-                    
+
+
+##INICIO DEL PROGRAMA:                
 
 board = [["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"]]
 fin = False
